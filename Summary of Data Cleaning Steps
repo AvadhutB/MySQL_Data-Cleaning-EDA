@@ -1,0 +1,8 @@
+Summary of Data Cleaning Steps
+Step	Action Taken
+1. Staging Table	Created a duplicate table (layoffs_staging) to clean data safely
+2. Removing Duplicates	Used ROW_NUMBER() to detect duplicates and removed them
+3. Standardizing Text	Trimmed spaces, unified industry names, and corrected country formatting
+4. Handling NULL Values	Converted empty strings to NULL, filled missing industries using JOIN
+5. Fixing Dates	Converted date column to MySQL DATE format
+6. Removing Unneeded Columns	Dropped row_num after de-duplication
